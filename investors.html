@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investors — jungle.io</title>
+  <meta name="description" content="Investor inquiries for jungle.io." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">jungle<span class="dot">.io</span></a>
+      <nav>
+        <a href="hiring.html">We're hiring</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="container reveal">
+      <div class="section-label">Investors</div>
+      <h2 class="section-title">Investor inquiries</h2>
+      <p class="section-lead">
+        We're currently in deep R&amp;D and engaged with a small set of strategic
+        partners. For investor inquiries, please reach out directly:
+      </p>
+      <div class="contact-box">
+        <div class="label">Investor relations</div>
+        <a href="mailto:ajmal@jungle.io">ajmal@jungle.io</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span class="brand">jungle<span class="dot">.io</span></span> &nbsp;·&nbsp;
+      &copy; 2026 Jungle Technologies. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

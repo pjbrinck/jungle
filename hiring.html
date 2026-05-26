@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hiring — jungle.io</title>
+  <meta name="description" content="Open roles, values, and how to apply at jungle.io." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">jungle<span class="dot">.io</span></a>
+      <nav>
+        <a href="investors.html">For investors</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Open roles -->
+  <section class="block">
+    <div class="container reveal">
+      <div class="section-label">Hiring</div>
+      <h2 class="section-title">Build the next era of infrastructure with us</h2>
+      <p class="section-lead">
+        We're a small, focused R&amp;D team taking on one of the hardest problems in
+        modern software: the tooling of large enterprises provisioning and deploying their
+        cloud infrastructure, services, and applications. 
+      </p>
+      <p>&nbsp;</p>
+      <p class="section-lead">
+        If you're excited by ambitious technical challenges, we'd love to hear from you.
+      </p>
+
+      <div class="roles">
+        <div class="role-item">
+          <div class="meta">Engineering · Remote</div>
+          <h3>DevOps Engineer</h3>
+          <p>Analyze and document our needs for software development automation.</p>
+          <p>Analyze and test software development automation tools from various vendors, including those of competitors in our space.</p>
+          <p>Design, document, and implement as well as operate, maintain, and improve our future software development automation tool chain.</p>
+          <p>&nbsp;</p>
+          <p>Since we build the most awesome software development automation tool, of course, we want to use our own product in our own software development automation tool chain. Hence, as our product matures, you will replace that of our competitor initially used with the MACHINE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="block alt">
+    <div class="container reveal">
+      <div class="section-label">How we work</div>
+      <h2 class="section-title">Our values</h2>
+
+      <div class="values">
+        <div class="value-item">
+          <h3>Depth over speed</h3>
+          <p>We're solving foundational problems. We invest the time to understand them deeply and design solutions that hold up for the long run.</p>
+        </div>
+        <div class="value-item">
+          <h3>Customer obsession</h3>
+          <p>Our design partners are large engineering organizations. Their reality — not our assumptions — drives what we build.</p>
+        </div>
+        <div class="value-item">
+          <h3>Small team, high trust</h3>
+          <p>We hire talented engineers and give them ownership. Less process, more judgement, and clear accountability for outcomes.</p>
+        </div>
+        <div class="value-item">
+          <h3>Write things down</h3>
+          <p>Async-first, distributed by default. Strong written communication is how we stay aligned across geographies and time zones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="block">
+    <div class="container reveal">
+      <div class="section-label">Apply</div>
+      <h2 class="section-title">Interested?</h2>
+      <p class="section-lead">
+        Don't see your role above? We'd still love to hear from exceptional engineers
+        and designers. Send a short note and your background to:
+      </p>
+      <div class="contact-box">
+        <div class="label">Applications</div>
+        <a href="mailto:ajmal@jungle.io">ajmal@jungle.io</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span class="brand">jungle<span class="dot">.io</span></span> &nbsp;·&nbsp;
+      &copy; 2026 Jungle Technologies. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
